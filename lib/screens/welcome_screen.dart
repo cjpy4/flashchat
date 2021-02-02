@@ -70,11 +70,17 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               navID: LoginScreen.navID,
               buttonColor: Colors.lightBlue,
               buttonText: 'Login',
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.navID);
+              },
             ),
             NavButton(
               navID: RegistrationScreen.navID,
               buttonColor: Colors.blueAccent,
               buttonText: 'Register',
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.navID);
+              },
             ),
           ],
         ),
